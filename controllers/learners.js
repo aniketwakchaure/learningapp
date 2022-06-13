@@ -28,7 +28,7 @@ const login=(req,res,next)=>{
         }
         else{
             if(bcrypt.compare(req.body.password, result.password)){
-                const token =jwt.sign({id:result_.id},req.app.get('secretary'),{expiresIn:'1h'})
+                const token =jwt.sign({id:result._id},req.app.get('secretKey'),{expiresIn:'1h'})
                 res.json({
                     status:"Success",
                     message:"Login Successfully",

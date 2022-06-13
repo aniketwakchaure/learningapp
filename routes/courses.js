@@ -7,12 +7,12 @@ router.post('/create',courseController.createCourse)
 //read
 router.get('/getAllCourse',courseController.readAllcourse)
 //Read By ID
-router.get('/getCourseById/:course_id',courseController.readCourseById)
+router.get('/getCourseById/:id',courseController.readCourseById)
 //read by Name
-router.get('/getCourseById/:course_id',courseController.readCourseByName)
+router.get('/getCourseByName/:course_name',courseController.readCourseByName)
 //update course by Id
-router.put('/updateCourseById/:course_id',courseController.updateCourseById)
+router.put('/updateCourseById/:id',courseController.updateCourseById)
 //delet course by iD
-router.delete('/deleteCourseById/:course_id',courseController.deleteCourseById)
+router.delete('/deleteCourseById/:id',courseController.deleteCourseById)
 
 module.exports=router

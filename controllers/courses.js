@@ -2,7 +2,7 @@ const CourseModel =require('../models/courses')
 
 //create course
 const createCourse=async(req,res,next)=>{
-    let {name,description}=req.body
+    let {course_id,course_name,course_description}=req.body
     await CourseModel.create({
         course_id,
         course_name,
